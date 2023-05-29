@@ -96,8 +96,6 @@ form {
     grid-auto-rows: 1fr;
     grid-template-columns: 1fr 1fr 1fr ;
     grid-row: 2/3;
-    margin-left: 15rem;
-    margin-right: 15rem;
     column-gap: 4rem;
     row-gap: 4rem   ;
     overflow: auto;
