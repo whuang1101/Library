@@ -27,6 +27,7 @@ body{
     background-color: rgb(246, 244, 244);
     display: grid;
     grid-auto-rows: auto;
+    justify-content: center;
     overflow: auto;
 }
 .main-content .add-book {
@@ -93,16 +94,14 @@ form {
 .books {
     display: grid;
     grid-auto-rows: 1fr;
-    grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+    grid-template-columns: 1fr 1fr 1fr ;
     grid-row: 2/3;
-    margin-left: 2rem;
-    margin-right: 2rem;
-    margin-bottom: 2rem;
-    column-gap: 2rem;
-    row-gap: 2rem;
-    overflow: scroll;
-    align-content: start; /* Add this line */
-  }
+    margin-left: 15rem;
+    margin-right: 15rem;
+    column-gap: 4rem;
+    row-gap: 4rem   ;
+    overflow: auto;
+}
 .book div {
     display: inline;
 }
