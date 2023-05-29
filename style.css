@@ -1,0 +1,85 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    height: 100%;
+    width: auto;
+    background-color:rgb(246, 244, 244);
+}
+.container{
+    display: grid;
+    grid-template-rows: 1fr auto;
+}
+.header {
+    display: flex;
+    justify-content: center;
+    box-shadow: 1rem 1rem 1rem 1rem lightgrey;
+    margin-bottom: .1rem;
+    padding: 1rem;
+    background-color: white;
+}
+.title {
+    font-size: 3rem;
+    padding-bottom: .5rem;
+}
+.main-content {
+    background-color: rgb(246, 244, 244);
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    justify-content: center;
+    overflow: auto;
+}
+.main-content button {
+    font-size: 1.5rem;
+    background-color: rgb(246, 244, 244);
+    border: .1rem rgb(246, 244, 244);
+    padding: 1.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+
+}
+.main-content button:hover {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    background-color: rgb(204, 199, 199);
+    padding: 1.5rem;
+    border: 1rem rgb(246, 244, 244);
+    border-radius: 3rem ;
+}
+.popup-form-overlay{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+.popup-show {
+    display: flex !important;
+    opacity: 1;
+    transform: scale(1);
+}
+.popup-form {
+    background-color: white;
+    max-height: 200px;
+    max-width: 300px;
+    display: grid;
+    grid-template-rows: 1fr 10fr;
+    padding: 2rem;
+  }
+
+.popup-form h3 {
+    padding-bottom: 1rem;
+}
+.check {
+    display: flex;
+    justify-content: space-between;
+}
+form {
+    display: grid;
+    grid-template-rows: auto auto auto auto;
+    row-gap: 1rem;
+
+}
