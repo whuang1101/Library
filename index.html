@@ -13,14 +13,14 @@
         <div class="popup-form">
             <h3>Add new book</h3>
             <form action="">
-                <input type="text" id="title" name="title" placeholder="Title">
-                <input type="text" id="author" name="author" placeholder="Author">
-                <input type="text" id="pages" name="pages" placeholder="Pages">
+                <input type="text" id="title" name="title" placeholder="Title" required>
+                <input type="text" id="author" name="author" placeholder="Author" required>
+                <input type="number" id="pages" name="pages" placeholder="Pages" required>
                 <div class="check">
-                    <label for="read">Have you read it?</label>
+                    <label for="read">Have you read this book it?</label>
                     <input type= "checkbox" id="read" name="read">
                 </div>
-                <input type="submit">
+                <input type="submit" class="submit-form">
             </form>
         </div>
     </div>
@@ -30,6 +30,22 @@
         </div>
         <div class="main-content">
             <button class="add-book">+ Add Book</button>
+            <div class="books">
+                <div class="book">
+                    <div class="book-title">
+                        <div>Title: To Kill a Mockingbird</div>
+                    </div>
+                    <div class="author">
+                        <div>Author: Harper Lee</div>
+                    </div>
+                    <div class="pages">
+                        <div>Pages: 384</div>
+                    </div>
+                    <button class="not-read">Not Read</button>
+                    <button class="remove To-Kill-A-Mockingbird">Remove</button>
+                </div>
+                
+            </div>
         </div>
     </div>
 </body>
